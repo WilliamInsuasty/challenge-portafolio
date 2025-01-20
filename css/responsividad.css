@@ -1,0 +1,556 @@
+/*--------- Tablets y pantallas más grandes --------------*/
+
+    @media (min-width: 768px) {
+        
+
+
+/*----------Seccion Cabecera-----------------*/
+       
+        .cabecera {
+            display: flex;
+            flex-direction: row;
+            height: 6rem;
+        }
+
+        .cabecera__contenedor{
+            margin: 0;
+        }
+
+        .cabecera__logo {
+            max-width: 100%;
+            margin-left: 1rem;
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+
+        .cabecera__titulo {
+            font-size: 1.5rem;
+        }
+
+        .toogle{
+            margin-left: 35%;
+        }
+
+
+        /*----------seccion presentación------------*/
+        
+        .presentacion{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content:center;
+            padding: 1.5rem;
+        }
+        
+        .presentacion__foto{
+            max-width: 100%; /* Ajustar el tamaño de la foto */
+            width: 300px;
+            height: 300px; /* Mantener la proporción de la imagen */ 
+            margin-top: 40px; 
+        }
+        
+        .presentacion__titulo{
+            font-size: 2.5rem;
+        }
+
+        .presentacion__subtitulo{
+            font-size: 1.5rem;
+        }
+
+        .redes {
+            font-size: 1.7rem;
+        }
+
+/*-----------------Sobre mí----------------------------*/
+        .sobre-mi__titulo{
+            font-size: 2rem;
+        }        
+
+        .sobre-mi__texto{
+            margin: 0rem 2.5rem 2rem 2rem;
+            font-size: 1.5rem;
+        }
+
+        .proyectos__elemento{
+            margin: 0rem 2.5rem 2rem 2rem;
+        }
+
+
+ /*------------------------------ Sección de Habilidades ------------------------------*/
+
+ .habilidades__titulo{
+    margin: 3rem;
+    font-size: 2rem;
+
+}
+
+.habilidades__nombre{
+    font-size: 1.3rem;
+}
+
+.habilidades__icono{
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.habilidades__elemento {
+    max-width: 280px; 
+}
+
+ /*---------------Hobbies----------------- */
+ .aficiones{
+    margin-bottom: 5rem;
+}
+
+ .aficiones__titulo{
+    margin: 3rem;
+    font-size: 2rem;
+
+}
+
+.aficiones__nombre{
+    font-size: 1.3rem;
+}
+
+.aficiones__icono{
+    width: 2.2rem;
+    height: 2.2rem;
+}
+
+.habilidades__elemento {
+    max-width: 280px; /* Limita el ancho de cada elemento */
+}
+
+ /***************Formacion académica**********************/        
+
+ .formacion{
+    padding-bottom: 5rem;
+}
+.formacion__titulo{
+    margin: 3.5rem;
+    font-size: 2rem;
+}
+
+.formacion__elemento{
+    height: 12rem;
+}
+.formacion__elemento img{
+    width: 35%;
+}
+
+.formacion__elemento h3, p{
+    font-size: 1.2rem;
+}
+
+/***************Seccioón de Proyectos**********************/
+
+    
+.proyectos__titulo{
+    padding-top: 5rem;
+     margin: 3.5rem;
+     font-size: 2rem;
+ }
+
+ .proyectos__elemento {
+     align-items: center; 
+     margin: 1rem; 
+     margin-bottom: 5rem;
+     max-width:100% ; 
+     width:70%;
+     box-shadow: 0 4px 10px var(--color-de-resaltar); 
+     transition: box-shadow 0.3s; 
+     line-height: 1.3rem;
+ }
+
+ .proyectos__nombre-titulo{
+     text-align: center;
+     font-size: 1.5rem;
+ }
+
+ .proyectos__icono{
+     max-width: 100%;
+     width: 100%;
+     border-radius: 15px;  
+     margin-bottom: 1.5rem;  
+ }
+
+ .proyectos__contenedor p{
+     font-size: 1.1rem;
+ }
+
+ .proyectos__descripcion{
+     text-align:justify;
+     
+ }
+
+ .proyectos__contenedor-footer{
+     font-size: 0.9rem;
+ }
+
+    /*------------------------------ Sección de Contacto ---------------------------------*/
+
+.contacto {
+        text-align: center; 
+        padding: 2rem; 
+    }
+
+    .contacto__titulo {
+        margin-bottom: 5rem; 
+        font-size: 3rem;
+    }
+
+    .contacto__contenido {
+        display: flex; 
+        justify-content: center; 
+        align-items: flex-start; 
+        max-width: 1200px; 
+        margin: 0 auto;
+    }
+
+
+
+    .campo-label{
+        font-size: 1.3rem;
+    }
+
+    .contacto__campo,
+    .contacto__campo--textarea{
+        font-size: 0.9rem;
+    }
+
+    .contacto__formulario {
+        flex: 1; 
+        display: flex;
+        max-width: 70%; 
+    }
+
+    .campo-container {
+        margin-bottom: 1rem; 
+    }
+
+
+    /*-----------------------Responsividad Pantallas grandes 1024px ------------------------------------*/
+
+
+
+    @media (min-width: 1024px) {
+    
+/*------------------Seccion menú-----------------*/
+
+    body {
+        margin-top: 120px; 
+        *margin-inline: auto;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .cabecera{
+        display: flex;
+        flex-direction: row;
+        justify-content:space-between;
+        align-items:center;
+        max-width: 100%;
+        height: 6rem;
+    }
+    
+    .cabecera__contenedor{
+        margin-left: 9%;
+    }
+
+    .navegacion__contenedor{
+        position: absolute;
+        top: 20px;
+        right: 40%;
+    }
+
+    .navegacion{
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start;
+        background-color: var(--color-de-resaltar)
+    }
+
+    .navegacion__lista{
+        display: flex;
+        flex-direction: row;
+        padding: 0;
+        margin: 0;
+        white-space: nowrap;
+        background-color: var(--color-de-resaltar);
+    }
+
+    .navegacion__elemento {
+        margin: 0;
+        padding: 0.5rem 0.5rem; 
+        font-size: 20px;
+    }
+
+    .navegacion__elemento a {
+        color: var(--color-de-fondo);
+        text-shadow: 1px 2px 2px var(--color-de-fondo-menu);
+        transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease; 
+    }
+
+    .navegacion__elemento:hover {
+        transform: translateY(-4px);
+        background-color: var(--color-de-fondo-menu);
+        border-radius: 12px;
+        color: var(--color-de-fondo); 
+    }
+
+
+ /* ----------- Sección Presentación --------------------*/
+
+    .presentacion{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content:center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+
+    .presentacion__foto{
+        max-width: 100%; 
+        width: 300px;
+        height: 300px; 
+        margin-top: 40px; 
+    }
+
+    .presentacion__contenedor {
+        max-width: 55%; 
+        margin: 3rem; 
+    }
+
+    .presentacion__titulo{
+        font-size: 3rem;
+    }
+
+    .presentacion__subtitulo{
+        text-align: justify;
+        font-size: 1.6rem;
+    }
+
+    .redes {
+        list-style: none;
+        padding: 0; 
+        margin-top: 2rem; 
+        font-size: 1.4rem;
+    }
+
+    .redes__img {
+        display: inline-block; 
+        margin-right: 1rem; 
+    }
+
+    .redes__img a {
+        color: var(--color-de-resaltar); 
+        display: flex; 
+        align-items: center; 
+    }
+
+    .redes__img img {
+        margin-left: 0.5rem; 
+    }
+
+        
+    /*---------------sección sobre mí---------------------*/
+        
+    .sobre-mi__titulo{
+        font-size: 2.5rem;
+    }
+    
+    .sobre-mi p{
+        margin: 0 15% 2% 15%;
+        font-size: 1.4rem;
+    }
+
+
+     /*---------------Skills----------------- */
+
+    .habilidades__titulo{
+        margin: 3rem;
+        font-size: 2.5rem;
+
+    }
+    
+    .habilidades__nombre{
+        font-size: 1.3rem;
+    }
+
+    .habilidades__icono{
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
+    .habilidades__elemento {
+        max-width: 280px; 
+    }
+
+    
+    
+    /*---------------Hobbies----------------- */
+    .aficiones{
+        margin-bottom: 5rem;
+    }
+
+     .aficiones__titulo{
+        margin: 3rem;
+        font-size: 2.5rem;
+
+    }
+    
+    .aficiones__nombre{
+        font-size: 1.3rem;
+    }
+
+    .aficiones__icono{
+        width: 2.2rem;
+        height: 2.2rem;
+    }
+
+    .habilidades__elemento {
+        max-width: 280px; /* Limita el ancho de cada elemento */
+    }
+
+    /***************Formacion académica**********************/        
+
+    .formacion{
+        padding-bottom: 5rem;
+    }
+    .formacion__titulo{
+        margin: 3.5rem;
+        font-size: 2.5rem;
+    }
+
+    .formacion__elemento{
+        height: 12rem;
+    }
+    .formacion__elemento img{
+        width: 35%;
+    }
+
+    .formacion__elemento h3, p{
+        font-size: 1.2rem;
+    }
+
+
+
+
+    /***************Seccioón de Proyectos**********************/
+
+    
+    .proyectos__titulo{
+       padding-top: 5rem;
+        margin: 3.5rem;
+        font-size: 2.5rem;
+    }
+   
+    .proyectos__elemento {
+        align-items: center; 
+        margin: 1rem; 
+        margin-bottom: 5rem;
+        max-width:100% ; 
+        width:30%;
+        box-shadow: 0 4px 10px var(--color-de-resaltar); 
+        transition: box-shadow 0.3s; 
+        line-height: 1.3rem;
+    }
+
+    .proyectos__nombre-titulo{
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    .proyectos__icono{
+        max-width: 100%;
+        width: 100%;
+        border-radius: 15px;  
+        margin-bottom: 1.5rem;  
+    }
+
+    .proyectos__contenedor p{
+        font-size: 1.1rem;
+    }
+
+    .proyectos__descripcion{
+        text-align:justify;
+        
+    }
+
+    .proyectos__contenedor-footer{
+        line-height: 0.25rem;
+        text-align: center;
+        color: var(--color-de-resaltar);
+        font-size: 0.9rem;
+    }
+
+
+
+
+    /*-------------------Sección de Contacto------------------*/
+
+    .contacto {
+        text-align: center; 
+        padding: 2rem; 
+    }
+
+    .contacto__titulo {
+        margin-bottom: 5rem; 
+        font-size: 3rem;
+    }
+
+    .contacto__contenido {
+        display: flex; 
+        justify-content: center; 
+        align-items: flex-start; 
+        max-width: 1200px; 
+        margin: 0 auto;
+    }
+
+    .contacto__logo {
+        max-width: 300px; 
+        height: 340px;
+        margin-right: 2rem; 
+        display: block; 
+        box-shadow: 0 4px 15px var(--color-de-fondo-menu);
+        
+    }
+
+    .campo-label{
+        font-size: 1.3rem;
+    }
+
+    .contacto__campo,
+    .contacto__campo--textarea{
+        font-size: 0.9rem;
+    }
+
+    .contacto__formulario {
+        flex: 1; 
+        display: flex;
+        max-width: 40%; 
+    }
+
+    .campo-container {
+        margin-bottom: 1rem; 
+    }
+    }
+}
+
+  /*-----------------------Responsividad Pantallas grandes 1024px ------------------------------------*/
+
+
+
+  @media (min-width: 1240px) {
+    
+    /*------------------Seccion menú-----------------*/
+    
+
+
+        .cabecera__contenedor{
+            margin-left: 15%;
+        }
+    
+    }    
